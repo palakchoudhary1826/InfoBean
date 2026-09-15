@@ -1,0 +1,52 @@
+========================================
+       MINECRAFT SURVIVAL CLI
+========================================
+
+Welcome to Minecraft Survival CLI! Your ultimate goal is to survive, gear up, and defeat the final boss: The Ender Dragon.
+
+--- GAME MECHANICS ---
+1. STATS:
+- Health (100 Max): If it hits 0, you die and the game is over.
+- Hunger (100 Max): Decreases by 1 every time you perform an action. If it reaches 0, you will starve and lose 5 Health per turn! Eat Food to restore Hunger.
+- XP & Level: Gained by doing activities. Leveling up shows your progression.
+
+2. GATHERING RESOURCES:
+- Wood & Food can be gathered without tools.
+- To mine ores, you need the right Pickaxe:
+  * Stone/Coal: Needs Wooden Pickaxe
+  * Iron: Needs Stone Pickaxe
+  * Gold: Needs Iron Pickaxe
+  * Diamond: Needs Diamond Pickaxe
+
+3. CRAFTING:
+- Upgrade your tools! A better Pickaxe lets you mine rarer ores, and a better Sword lets you fight stronger enemies.
+- Craft a Shield, Diamond Armor, and a Wooden Torch for extra progression.
+
+4. FIGHTING:
+- You must have the appropriate Sword level to fight tougher enemies.
+- Enemies:
+  * Zombie (Easy) -> Needs Wooden Sword
+  * Skeleton (Normal) -> Needs Stone Sword
+  * Creeper (Hard) -> Needs Iron Sword
+  * Enderman (Very Hard) -> Needs Iron Sword
+  * Dragon (Final Boss) -> Needs Diamond Sword & Health > 70
+- Defeating enemies grants XP.
+
+5. BUILDING:
+- Build structures to upgrade your base.
+- Wood House -> Stone House -> Iron House -> Castle.
+- Farm: Produces Food overnight while you sleep.
+- Furnace: Can be built with Stone.
+
+6. SLEEPING & EVENTS:
+- Sleep to advance to the next day and restore 20 Health.
+- Beware of random events during the night:
+  * Day 5 (and multiples): Monster Attacks (You need a sword to defend).
+  * Day 7 (and multiples): Rain (Boosts Farm output).
+  * Day 10 (and multiples): Find a Treasure Chest (+50 XP).
+  * Day 13 (and multiples): Earthquake (Damages your house).
+
+--- HOW TO WIN ---
+Craft a Diamond Sword, ensure your Health is above 70, and select the "Fight" -> "Dragon" option. Defeating the Ender Dragon instantly wins you the game!
+
+Good luck, and try to unlock all the achievements!

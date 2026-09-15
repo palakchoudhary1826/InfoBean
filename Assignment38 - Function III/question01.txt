@@ -1,0 +1,166 @@
+'''
+Assignment 01: Menu-Driven Number Analysis System
+
+Create a menu-driven Number Analysis System in Python.
+
+The program should continuously display a menu and allow the user
+to select different operations related to numbers. Each operation
+must be implemented using a separate function.
+
+The program must continue running until the user selects Exit.
+
+Main Menu
+----------------------------------------
+       NUMBER ANALYSIS SYSTEM
+----------------------------------------
+
+1. Check Perfect Number
+2. Check Palindrome Number
+3. Check Strong Number
+4. Check Armstrong Number
+5. Check Prime Number
+6. Check Even or Odd
+7. Find Factorial
+8. Find Sum of Digits
+9. Reverse a Number
+10. Find Number of Digits
+11. Check Automorphic Number
+12. Check Neon Number
+13. Check Spy Number
+14. Check Harshad Number
+15. Exit
+
+Enter your choice:
+
+Requirements:
+
+1. Implement each operation using a separate function.
+
+2. The functions must receive the required number through parameters
+   and must not take input directly.
+
+3. Each function should return its result to the main program.
+
+4. The main program should take input only after the user selects
+   the corresponding operation.
+
+5. The menu must run continuously using a loop until the user
+   selects option 15.
+
+6. Implement the following functions:
+
+   def is_perfect(number):
+       Check whether the number is a Perfect Number.
+       A number is perfect when the sum of its proper divisors
+       is equal to the number itself.
+
+   def is_palindrome(number):
+       Check whether the number reads the same from both directions.
+
+   def is_strong(number):
+       Check whether the sum of the factorials of its digits
+       is equal to the original number.
+
+   def is_armstrong(number):
+       Check whether the number is an Armstrong Number.
+       The number of digits must not be hard-coded.
+
+   def is_prime(number):
+       Check whether the number has exactly two factors:
+       1 and itself.
+
+   def check_even_odd(number):
+       Determine whether the number is Even or Odd.
+
+   def factorial(number):
+       Find and return the factorial of the given number.
+
+   def sum_of_digits(number):
+       Calculate and return the sum of all digits.
+
+   def reverse_number(number):
+       Reverse and return the given number.
+
+   def count_digits(number):
+       Count and return the number of digits present in the number.
+
+   def is_automorphic(number):
+       Check whether the square of the number ends with
+       the same number.
+
+   def is_neon(number):
+       Check whether the sum of the digits of the square
+       is equal to the original number.
+
+   def is_spy(number):
+       Check whether the sum of the digits is equal to
+       the product of the digits.
+
+   def is_harshad(number):
+       Check whether the number is completely divisible by
+       the sum of its digits.
+
+7. Display appropriate messages based on the returned result.
+
+   For example:
+   - <number> is a Perfect Number
+   - <number> is not a Perfect Number
+   - <number> is a Prime Number
+   - <number> is not a Prime Number
+
+8. For the factorial operation, display the calculated factorial.
+
+9. For the sum of digits operation, display the calculated sum.
+
+10. For the reverse operation, display the reversed number.
+
+11. For the digit-count operation, display the total number of digits.
+
+12. If the user enters a choice outside the range 1 to 15, display:
+
+   Invalid Choice!
+   Please select a choice between 1 and 15.
+
+   Then display the menu again.
+
+13. Do not take input for all operations at the beginning.
+    Take input only for the operation selected by the user.
+
+14. After completing an operation, display a message such as:
+
+   Press Enter to continue...
+
+   Then display the menu again.
+
+15. When the user selects option 15, display:
+
+   Thank you for using Number Analysis System!
+   Program terminated.
+
+   Then terminate the program.
+
+16. The menu should be displayed in a clear and consistent format
+    every time it is shown.
+
+17. Do not place the main operation logic directly inside the menu.
+    Use the required functions and call them from the main program.
+
+Example Program Flow:
+
+User selects:
+4
+
+Enter a number:
+153
+
+153 is an Armstrong Number
+
+Press Enter to continue...
+
+The menu should then be displayed again.
+
+When the user selects:
+15
+
+Display the termination message and end the program.
+'''

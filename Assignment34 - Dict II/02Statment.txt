@@ -1,0 +1,300 @@
+"""
+===========================================================
+QUESTION 2: ONLINE COURSE ENROLLMENT & STUDENT MANAGEMENT SYSTEM
+===========================================================
+
+A training institute offers multiple courses such as Python,
+Java, Full Stack Development, Data Science, and React.
+
+Currently, student enrollment details are maintained manually
+in Excel sheets. As the number of students is increasing, the
+institute wants to develop a Student Management System using
+Python.
+
+The system should store student records in a nested dictionary
+where:
+
+Key   -> Student ID
+Value -> Dictionary containing student information
+
+
+Each student record should contain:
+
+1. Student Name
+2. Course Name
+3. Mobile Number
+4. Fees
+5. City
+
+
+SAMPLE DATA STRUCTURE:
+
+{
+    101: {
+        "name": "Ajay",
+        "course": "Python",
+        "mobile": "9876543210",
+        "fees": 25000,
+        "city": "Indore"
+    },
+
+    102: {
+        "name": "Ravi",
+        "course": "Java",
+        "mobile": "9876500000",
+        "fees": 22000,
+        "city": "Bhopal"
+    }
+}
+
+
+===========================================================
+MENU DRIVEN PROGRAM
+===========================================================
+
+Display the following menu repeatedly until the user
+chooses Exit.
+
+=========================================
+       STUDENT MANAGEMENT SYSTEM
+=========================================
+
+1. Add New Student
+2. Search Student
+3. Update Course
+4. Delete Student
+5. Display All Students
+6. Count Total Students
+7. Display Students By Course
+8. Display Students By City
+9. Find Student Paying Highest Fees
+10. Find Student Paying Lowest Fees
+11. Exit
+
+
+===========================================================
+FUNCTIONAL REQUIREMENTS
+===========================================================
+
+
+1. ADD NEW STUDENT
+-----------------------------------------------------------
+
+Accept the following details:
+
+- Student ID
+- Student Name
+- Course Name
+- Mobile Number
+- Fees
+- City
+
+Store the information in the nested dictionary.
+
+VALIDATION:
+
+If Student ID already exists, display:
+
+Student ID Already Exists
+
+
+-----------------------------------------------------------
+2. SEARCH STUDENT
+-----------------------------------------------------------
+
+Accept Student ID from the user.
+
+If found, display complete student information.
+
+Sample Output:
+
+Student ID : 101
+Name       : Ajay
+Course     : Python
+Mobile     : 9876543210
+Fees       : 25000
+City       : Indore
+
+If not found, display:
+
+Student Not Found
+
+
+-----------------------------------------------------------
+3. UPDATE COURSE
+-----------------------------------------------------------
+
+Accept Student ID.
+
+If found:
+
+- Ask for the new course name.
+- Update the course.
+
+Sample Output:
+
+Course Updated Successfully
+
+
+-----------------------------------------------------------
+4. DELETE STUDENT
+-----------------------------------------------------------
+
+Accept Student ID.
+
+If found:
+
+- Delete the student record.
+
+Sample Output:
+
+Student Deleted Successfully
+
+Otherwise:
+
+Student Not Found
+
+
+-----------------------------------------------------------
+5. DISPLAY ALL STUDENTS
+-----------------------------------------------------------
+
+Display all student records in a proper format.
+
+Sample Output:
+
+-----------------------------------
+Student ID : 101
+Name       : Ajay
+Course     : Python
+Fees       : 25000
+-----------------------------------
+
+Student ID : 102
+Name       : Ravi
+Course     : Java
+Fees       : 22000
+-----------------------------------
+
+
+-----------------------------------------------------------
+6. COUNT TOTAL STUDENTS
+-----------------------------------------------------------
+
+Display the total number of students enrolled.
+
+Sample Output:
+
+Total Students : 45
+
+
+-----------------------------------------------------------
+7. DISPLAY STUDENTS BY COURSE
+-----------------------------------------------------------
+
+Accept a course name from the user.
+
+Display all students enrolled in that course.
+
+Sample Output:
+
+Enter Course : Python
+
+101  Ajay
+105  Neha
+112  Aman
+
+If no students are found:
+
+No Students Found
+
+
+-----------------------------------------------------------
+8. DISPLAY STUDENTS BY CITY
+-----------------------------------------------------------
+
+Accept city name from the user.
+
+Display all students belonging to that city.
+
+Sample Output:
+
+Enter City : Indore
+
+101  Ajay
+108  Ravi
+115  Pooja
+
+If no students are found:
+
+No Students Found
+
+
+-----------------------------------------------------------
+9. FIND STUDENT PAYING HIGHEST FEES
+-----------------------------------------------------------
+
+Display complete details of the student who has paid
+the highest fees.
+
+Sample Output:
+
+Highest Fee Paying Student
+
+Student ID : 121
+Name       : Neha
+Course     : Data Science
+Fees       : 50000
+
+
+-----------------------------------------------------------
+10. FIND STUDENT PAYING LOWEST FEES
+-----------------------------------------------------------
+
+Display complete details of the student who has paid
+the lowest fees.
+
+Sample Output:
+
+Lowest Fee Paying Student
+
+Student ID : 131
+Name       : Aman
+Course     : React
+Fees       : 15000
+
+
+-----------------------------------------------------------
+11. EXIT
+-----------------------------------------------------------
+
+Terminate the application.
+
+Sample Output:
+
+Thank You For Using Student Management System
+
+
+===========================================================
+CONCEPTS TO BE USED
+===========================================================
+
+- Dictionary
+- Nested Dictionary
+- User Input
+- Type Conversion
+- if-elif-else
+- while Loop
+- for Loop
+- Dictionary Methods
+- CRUD Operations
+- Searching
+- Updating
+- Deleting
+- Filtering
+- max()
+- min()
+- Menu-Driven Programming
+- match-case
+===========================================================
+"""

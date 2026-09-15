@@ -1,0 +1,619 @@
+"""
+03. ONLINE SHOPPING SYSTEM
+
+Scenario:
+
+An e-commerce company wants to develop a simple Online Shopping System to
+manage customer information, product information, invoices, and multiple
+products.
+
+The application must be menu-driven and should demonstrate the different
+types of arguments supported by Python functions.
+
+The main objective of this program is to understand and implement:
+
+1. Positional Arguments
+2. Keyword Arguments
+3. Default Arguments
+4. Variable Length Arguments (*args)
+5. Arbitrary Keyword Arguments (**kwargs)
+
+The program should continue displaying the menu until the user selects
+the Exit option.
+
+
+============================================================
+                        MENU
+============================================================
+
+1. Customer Registration
+2. Product Information
+3. Generate Invoice
+4. Add Multiple Products
+5. Display Customer Profile
+6. Exit
+
+
+============================================================
+              CHOICE 1 – CUSTOMER REGISTRATION
+============================================================
+
+Requirement:
+
+The system should allow a customer to register by entering the following
+details:
+
+    * Customer Name
+    * Email
+    * Mobile Number
+
+Create a separate user-defined function named:
+
+    register_customer()
+
+The function should accept the customer details as parameters.
+
+The values must be passed to the function using POSITIONAL ARGUMENTS.
+
+Example:
+
+    register_customer(name, email, mobile)
+
+Inside the function:
+
+    * Display the customer details.
+    * Display a message indicating that registration was successful.
+
+Expected Output:
+
+Enter Choice : 1
+
+Enter Customer Name : Ajay
+Enter Email : ajay@gmail.com
+Enter Mobile Number : 9876543210
+
+----- CUSTOMER REGISTRATION -----
+
+Customer Name  : Ajay
+Email          : ajay@gmail.com
+Mobile Number  : 9876543210
+
+Customer Registered Successfully.
+
+
+============================================================
+              CHOICE 2 – PRODUCT INFORMATION
+============================================================
+
+Requirement:
+
+The system should allow the user to enter product information.
+
+Accept:
+
+    * Product Name
+    * Product Price
+    * Product Category
+
+Create a separate user-defined function named:
+
+    product_information()
+
+The function should accept the product details as parameters.
+
+The function must be called using KEYWORD ARGUMENTS.
+
+Example:
+
+    product_information(
+        name=product_name,
+        price=product_price,
+        category=product_category
+    )
+
+Inside the function:
+
+    * Display the product name.
+    * Display the product price.
+    * Display the product category.
+    * Display a suitable success message.
+
+Expected Output:
+
+Enter Choice : 2
+
+Enter Product Name : Laptop
+Enter Product Price : 55000
+Enter Product Category : Electronics
+
+----- PRODUCT INFORMATION -----
+
+Product Name     : Laptop
+Product Price    : 55000
+Product Category : Electronics
+
+Product Information Displayed Successfully.
+
+
+============================================================
+                 CHOICE 3 – GENERATE INVOICE
+============================================================
+
+Requirement:
+
+The system should generate an invoice for a product.
+
+Accept:
+
+    * Product Name
+    * Product Price
+
+The system should also calculate tax.
+
+Create a separate user-defined function named:
+
+    generate_invoice()
+
+The function must contain a DEFAULT ARGUMENT for the tax percentage.
+
+For example:
+
+    def generate_invoice(product_name, price, tax=18):
+
+Here:
+
+    * product_name is a normal parameter.
+    * price is a normal parameter.
+    * tax is a default parameter.
+    * The default tax percentage should be 18%.
+
+The function should:
+
+    1. Display the product name.
+    2. Display the product price.
+    3. Display the tax percentage.
+    4. Calculate the tax amount.
+    5. Calculate the final amount.
+    6. Display the invoice.
+
+The function should normally be called without providing the tax
+percentage so that the DEFAULT ARGUMENT is used.
+
+Example:
+
+    generate_invoice(product_name, price)
+
+Expected Output:
+
+Enter Choice : 3
+
+Enter Product Name : Laptop
+Enter Product Price : 55000
+
+----------- INVOICE -----------
+
+Product Name    : Laptop
+Product Price   : 55000
+Tax Percentage  : 18%
+Tax Amount      : 9900
+Final Amount    : 64900
+
+Invoice Generated Successfully.
+
+
+============================================================
+             CHOICE 4 – ADD MULTIPLE PRODUCTS
+============================================================
+
+Requirement:
+
+The system should allow the user to enter the prices of any number
+of products.
+
+First ask the user:
+
+    Enter Number of Products
+
+Then accept the price of each product.
+
+Create a separate user-defined function named:
+
+    calculate_total()
+
+The function must use VARIABLE LENGTH ARGUMENTS (*args).
+
+Example:
+
+    def calculate_total(*prices):
+
+The function should:
+
+    * Accept any number of product prices.
+    * Store all received prices through *args.
+    * Calculate the total bill amount.
+    * Return the total amount to the calling function.
+
+Example function call:
+
+    calculate_total(price1, price2, price3, price4)
+
+The number of arguments passed should not be fixed.
+
+The function should also work with:
+
+    calculate_total(100, 200)
+
+or
+
+    calculate_total(100, 200, 300, 400, 500)
+
+Expected Output:
+
+Enter Choice : 4
+
+Enter Number of Products : 4
+
+Enter Price 1 : 100
+Enter Price 2 : 200
+Enter Price 3 : 300
+Enter Price 4 : 400
+
+Total Bill Amount : 1000
+
+
+============================================================
+           CHOICE 5 – DISPLAY CUSTOMER PROFILE
+============================================================
+
+Requirement:
+
+The system should allow the user to display customer information.
+
+The customer profile may contain different types of information such as:
+
+    * Name
+    * City
+    * Email
+    * Mobile
+    * Membership Type
+    * Address
+    * Age
+    * etc.
+
+Create a separate user-defined function named:
+
+    display_profile()
+
+The function must use ARBITRARY KEYWORD ARGUMENTS (**kwargs).
+
+Example:
+
+    def display_profile(**details):
+
+The function should:
+
+    * Accept any number of keyword arguments.
+    * Display the key and corresponding value.
+    * Work even when the number of customer details changes.
+
+Example function call:
+
+    display_profile(
+        name="Ajay",
+        city="Indore",
+        email="ajay@gmail.com",
+        mobile="9876543210",
+        membership="Gold"
+    )
+
+Another valid example:
+
+    display_profile(
+        name="Rahul",
+        city="Bhopal",
+        email="rahul@gmail.com",
+        membership="Silver"
+    )
+
+The function should not require a fixed number of arguments.
+
+Expected Output:
+
+Enter Choice : 5
+
+----- CUSTOMER PROFILE -----
+
+Name            : Ajay
+City            : Indore
+Email           : ajay@gmail.com
+Mobile          : 9876543210
+Membership Type : Gold
+
+Customer Profile Displayed Successfully.
+
+
+============================================================
+                    CHOICE 6 – EXIT
+============================================================
+
+Requirement:
+
+When the user selects option 6:
+
+    * Display a thank-you message.
+    * Terminate the program.
+    * The menu should no longer be displayed.
+
+Expected Output:
+
+Enter Choice : 6
+
+Thank You.
+Program Terminated.
+
+
+============================================================
+                  PROGRAM STRUCTURE
+============================================================
+
+The program must contain separate functions for each operation.
+
+Suggested functions:
+
+    1. register_customer()
+    2. product_information()
+    3. generate_invoice()
+    4. calculate_total()
+    5. display_profile()
+    6. display_menu()
+
+
+The main program should:
+
+    * Display the menu.
+    * Accept the user's choice.
+    * Call the appropriate function.
+    * Continue running until the user selects Exit.
+
+
+============================================================
+             ARGUMENT TYPES TO BE DEMONSTRATED
+============================================================
+
+The following argument types MUST be used exactly as specified:
+
+1. POSITIONAL ARGUMENTS
+
+Function:
+
+    register_customer()
+
+Example:
+
+    register_customer(name, email, mobile)
+
+
+2. KEYWORD ARGUMENTS
+
+Function:
+
+    product_information()
+
+Example:
+
+    product_information(
+        name=product_name,
+        price=price,
+        category=category
+    )
+
+
+3. DEFAULT ARGUMENTS
+
+Function:
+
+    generate_invoice()
+
+Example:
+
+    def generate_invoice(product_name, price, tax=18):
+
+
+4. VARIABLE LENGTH ARGUMENTS (*args)
+
+Function:
+
+    calculate_total()
+
+Example:
+
+    def calculate_total(*prices):
+
+
+5. ARBITRARY KEYWORD ARGUMENTS (**kwargs)
+
+Function:
+
+    display_profile()
+
+Example:
+
+    def display_profile(**details):
+
+
+============================================================
+                     VALIDATION
+============================================================
+
+The program should perform basic input validation.
+
+1. Menu Choice Validation
+
+The user should enter a valid menu option from 1 to 6.
+
+If an invalid choice is entered, display:
+
+    Invalid Choice. Please select a valid option.
+
+
+2. Product Price Validation
+
+Product price should not be negative.
+
+If an invalid price is entered, display:
+
+    Invalid Price.
+
+
+3. Number of Products Validation
+
+The number of products should be greater than zero.
+
+If an invalid number is entered, display:
+
+    Invalid Number of Products.
+
+
+4. Mobile Number Validation
+
+The mobile number should contain valid digits.
+
+
+============================================================
+                  IMPORTANT INSTRUCTIONS
+============================================================
+
+1. Use multiple user-defined functions.
+
+2. Use a separate function for every menu operation.
+
+3. Choice 1 MUST demonstrate POSITIONAL ARGUMENTS.
+
+4. Choice 2 MUST demonstrate KEYWORD ARGUMENTS.
+
+5. Choice 3 MUST demonstrate DEFAULT ARGUMENTS.
+
+6. Choice 4 MUST demonstrate VARIABLE LENGTH ARGUMENTS (*args).
+
+7. Choice 5 MUST demonstrate ARBITRARY KEYWORD ARGUMENTS (**kwargs).
+
+8. Use parameters to pass data between functions.
+
+9. Use return statements wherever a calculated result needs to be
+   returned to the calling function.
+
+10. Avoid unnecessary global variables.
+
+11. Use meaningful function names.
+
+12. Maintain proper indentation and code readability.
+
+13. Use a menu-driven approach.
+
+14. The program must continue until the user selects Exit.
+
+15. Do not create separate functions only for demonstration; each
+    function should perform a meaningful operation.
+
+16. The program should clearly demonstrate the difference between
+    positional, keyword, default, *args, and **kwargs arguments.
+
+17. Wherever possible, perform calculations inside functions and
+    return the result instead of unnecessarily using global variables.
+
+
+============================================================
+                    SAMPLE EXECUTION
+============================================================
+
+******** ONLINE SHOPPING SYSTEM ********
+
+1. Customer Registration
+2. Product Information
+3. Generate Invoice
+4. Add Multiple Products
+5. Display Customer Profile
+6. Exit
+
+Enter Choice : 1
+
+Enter Customer Name : Ajay
+Enter Email : ajay@gmail.com
+Enter Mobile Number : 9876543210
+
+Customer Registered Successfully.
+
+
+Enter Choice : 2
+
+Enter Product Name : Laptop
+Enter Product Price : 55000
+Enter Product Category : Electronics
+
+Product Information Displayed Successfully.
+
+
+Enter Choice : 3
+
+Enter Product Name : Laptop
+Enter Product Price : 55000
+
+----------- INVOICE -----------
+
+Product Name   : Laptop
+Product Price  : 55000
+Tax Percentage : 18%
+Tax Amount     : 9900
+Final Amount   : 64900
+
+Invoice Generated Successfully.
+
+
+Enter Choice : 4
+
+Enter Number of Products : 4
+
+Enter Price 1 : 100
+Enter Price 2 : 200
+Enter Price 3 : 300
+Enter Price 4 : 400
+
+Total Bill Amount : 1000
+
+
+Enter Choice : 5
+
+----- CUSTOMER PROFILE -----
+
+Name            : Ajay
+City            : Indore
+Email           : ajay@gmail.com
+Mobile          : 9876543210
+Membership Type : Gold
+
+Customer Profile Displayed Successfully.
+
+
+Enter Choice : 6
+
+Thank You.
+Program Terminated.
+
+
+============================================================
+                         OBJECTIVE
+============================================================
+
+The objective of this program is to develop a menu-driven Online
+Shopping System while practically demonstrating the use of different
+types of Python function arguments:
+
+    Positional Arguments
+    Keyword Arguments
+    Default Arguments
+    Variable Length Arguments (*args)
+    Arbitrary Keyword Arguments (**kwargs)
+
+The program should be modular, readable, reusable, and properly
+structured using user-defined functions.
+"""

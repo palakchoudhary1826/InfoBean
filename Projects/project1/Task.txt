@@ -1,0 +1,37 @@
+Project : Travel Itinerary Planner
+Problem Statement: Planning trips involves multiple tasks. Create a system that:
+•	Manages travel itineraries
+•	Tracks bookings
+•	Calculates travel costs
+•	Lists packing items
+•	Tracks important documents
+Features:
+1.	Create trip itineraries
+2.	Add flight/hotel bookings
+3.	Calculate total trip cost
+4.	Create packing lists
+5.	Track important documents
+6.	Set travel reminders
+7.	Manage travel budget
+8.	Track daily expenses during trip
+9.	Rate experiences
+10.	Generate travel report
+
+
+
+
+====================================
+      TRAVEL ITINERARY PLANNER
+====================================
+
+1. Create Trip
+2. Flight Booking
+3. Hotel Booking
+4. Trip Cost
+5. Packing List
+6. Documents
+7. Budget
+8. Daily Expenses
+9. Rate Trip
+10. Travel Report
+11. Exit
