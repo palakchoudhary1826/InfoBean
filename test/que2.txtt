@@ -1,0 +1,147 @@
+QNO 2: EMPLOYEE PROJECT SYSTEM(4 marks-1 model and list creation and 3 marks for menus)
+
+Create a Python application using **Packages, Modules, Classes, Objects and Lists**.
+
+==> PROJECT STRUCTURE
+
+EmployeeProject/
+│
+├── main.py
+│
+└── models/
+    ├── __init__.py
+    ├── employee.py
+    └── project.py
+
+1. Employee Class
+
+Create an `Employee` class inside:
+
+models/employee.py
+
+
+Attributes
+
+employee_id
+employee_name
+department
+salary
+
+Take details of **5 employees** from the user.
+
+Create Employee objects and store them in the  list in `main.py`:
+
+ 2. Project Class
+
+Create a `Project` class inside:
+
+models/project.py
+
+ Attributes
+
+project_id
+project_name
+employee_id
+project_cost
+
+Take details of **5 projects** from the user.
+
+Create Project objects and store them in the  list in `main.py`:
+
+===> MENU OPERATIONS
+
+Create the following menu in `main.py`:
+
+========== MENU ==========
+
+1. Display All Employees(.5 marks)
+2. Search Employee by ID(.5 marks)
+3. Display Employees by Department(.5 marks)
+4. Find Highest Paid Employee(.5 marks)
+5. Display Employee Projects(.5 marks)
+6. Find Highest Cost Project(.5 marks)
+7. Exit
+
+Enter your choice:
+
+ Option 1 – Display All Employees
+
+Display all employee details.
+
+Option 2 – Search Employee by ID
+
+Take Employee ID from the user and display the employee details.
+
+If not found:
+
+Employee Not Found
+
+Option 3 – Display Employees by Department
+
+Take department name and display all employees belonging to that department.
+
+Option 4 – Find Highest Paid Employee
+
+Display the employee having the highest salary.
+
+Option 5 – Display Employee Projects
+
+Take Employee ID and display all projects assigned to that employee.
+
+Option 6 – Find Highest Cost Project
+
+Find the project having the highest cost and display:
+
+Project Name
+Project Cost
+Employee Name
+
+
+# IMPORTANT INSTRUCTIONS
+
+1. `Employee` class must be created in `models/employee.py`.
+2. `Project` class must be created in `models/project.py`.
+3. `employees` list must be created in `main.py`.
+4. `projects` list must be created in `main.py`.
+5. All objects must be created in `main.py`.
+6. All user input must be taken in `main.py`.
+7. Use imported classes from the `models` package.
+8. Perform all searching, filtering and calculations in `main.py`.
+9. Use objects stored in the lists; do not use dictionaries.
+10. Menu should continue until the user selects **Exit**.
+11. Do not use external libraries.
+
+
+Employees
+101 Amit IT 65000
+102 Rahul HR 45000
+103 Priya IT 55000
+104 Neha Finance 70000
+105 Rohit IT 40000
+```
+
+Projects
+
+501 BankingApp 101 150000
+502 PayrollApp 103 120000
+503 EcommerceApp 101 200000
+504 FinanceApp 104 180000
+505 HRSystem 102 90000
+```
+
+Sample Output
+
+Enter Employee ID: 101
+
+Employee Projects:
+
+501 BankingApp 150000
+503 EcommerceApp 200000
+
+For highest cost project:
+
+Highest Cost Project:
+
+Project: EcommerceApp
+Cost: 200000
+Employee: Amit

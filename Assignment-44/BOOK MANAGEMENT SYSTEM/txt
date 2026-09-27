@@ -1,0 +1,59 @@
+============================================================
+ASSIGNMENT 5 – BOOK MANAGEMENT SYSTEM
+=====================================
+
+Create a Book class inside:
+
+models/book.py
+
+ATTRIBUTES:
+
+* book_id
+* book_name
+* author
+* price
+
+TASKS:
+
+1. Take details of 5 books from the user.
+2. Create Book objects.
+3. Store all Book objects in a list.
+4. Display all books.
+5. Search a book using Book Id.
+6. Display all books written by a particular author.
+7. Display books whose price is greater than 500.
+8. Find the most expensive book.
+9. Calculate average price of all books.
+
+SAMPLE INPUT:
+
+101 Java Programming James 650
+102 Python Basics Mark 550
+103 MySQL Guide John 450
+104 Advanced Java James 800
+105 DSA in Python Robert 700
+
+EXPECTED OUTPUT:
+
+All Books:
+101 Java Programming James 650
+102 Python Basics Mark 550
+103 MySQL Guide John 450
+104 Advanced Java James 800
+105 DSA in Python Robert 700
+
+Books by James:
+101 Java Programming 650
+104 Advanced Java 800
+
+Books with price greater than 500:
+Java Programming
+Python Basics
+Advanced Java
+DSA in Python
+
+Most Expensive Book:
+Advanced Java = 800
+
+Average Price:
+630
