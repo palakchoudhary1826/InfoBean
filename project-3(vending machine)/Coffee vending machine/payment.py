@@ -1,26 +1,16 @@
-def calculate_total(cart, coffees):
 
-    total = 0
-
-    for coffee_name, quantity in cart.items():
-
-        price = coffees[coffee_name]["price"]
-
-        item_total = price * quantity
-
-        total = total + item_total
-
-    return total
+def calculate_total(cart):
+     total = 0
+     for item in cart:
+        amount = item["price"] * item["quantity"]
+        total = total + amount
+     return total
 
 
-def check_payment(total, amount):
-
+def check_payment(amount, total):
     if amount >= total:
-
         change = amount - total
-
         return True, change
-
     else:
-
-        return False, 0
+        remaining = total - amount
+        return False, remaining
